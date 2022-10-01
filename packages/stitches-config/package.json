@@ -6,8 +6,8 @@
   "types": "./dist/index.d.ts",
   "license": "AGPL-3.0 License",
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
     "lint": "eslint src/**/*.ts* --fix",
     "clean": "rm -rf node_modules && rm -rf dist"
   },

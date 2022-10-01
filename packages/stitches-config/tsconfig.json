@@ -1,5 +1,5 @@
 {
-  "extends": "@muoosic/ts-config/react.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "extends": "@muoosic/ts-config/base.json",
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist", "node_modules"]
 }
