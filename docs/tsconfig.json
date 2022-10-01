@@ -1,0 +1,12 @@
+{
+  "extends": "@muoosic/ts-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
