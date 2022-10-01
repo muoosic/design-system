@@ -1,0 +1,28 @@
+{
+  "name": "@muoosic/stitches-config",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "license": "AGPL-3.0 License",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint src/**/*.ts* --fix",
+    "clean": "rm -rf node_modules && rm -rf dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist/**"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@muoosic/eslint-config": "*",
+    "@muoosic/ts-config": "*",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  }
+}
