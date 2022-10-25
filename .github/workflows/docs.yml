@@ -16,12 +16,17 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: 'npm'
+          cache-dependency-path: '**/yarn.lock'
 
       - name: Install packages
         run: yarn install --frozen-lockfile
 
       - name: Build
         run: yarn build
+        env:
+          TURBO_TOKEN: lHLAenb5sBj5IFscj0YM21KT
+          TURBO_TEAM: izakdvlpr
           
       - name: Deploy storybook
         working-directory: ./packages/docs
