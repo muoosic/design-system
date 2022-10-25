@@ -1,0 +1,2 @@
+var a=Object.defineProperty;var r=(t,n)=>a(t,"name",{value:n,configurable:!0});import{j as e}from"./jsx-runtime.869af8ae.js";import"./index.72324b00.js";import"./iframe.4763d96f.js";function o({children:t}){return e("button",{type:"button",children:t})}r(o,"Button");o.displayName="Button";const u={title:"Form/Button",component:o,args:{children:"Send",variant:"primary"}},c={},d=["Primary"];export{c as Primary,d as __namedExportsOrder,u as default};
+//# sourceMappingURL=Button.stories.0ed369ec.js.map
