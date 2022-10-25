@@ -18,13 +18,10 @@ jobs:
           node-version: 16
 
       - name: Install packages
-        run: yarn
+        run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn build --filter=docs^..
-        env:
-          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-          TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+        run: yarn build --filter=docs
           
       - name: Deploy storybook
         working-directory: ./docs
