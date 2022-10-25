@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "turbo run dev --no-cache --parallel --continue",
     "build": "turbo run build",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "turbo run build --filter=packages/docs && changeset publish",
+    "release": "turbo run build --filter=packages/docs && yarn changeset publish",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,ts,tsx,md,mdx}\""
   },

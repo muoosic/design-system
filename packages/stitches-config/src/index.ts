@@ -2,6 +2,7 @@ export * from './colors';
 export * from './space';
 export * from './fontSizes';
 export * from './fontWeights';
+export * from './fonts';
 export * from './lineHeights';
 export * from './letterSpacings';
 export * from './sizes';
