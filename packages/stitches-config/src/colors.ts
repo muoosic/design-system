@@ -8,4 +8,5 @@ export const colors = {
   gray700: 'hsl(220, 4%, 23%)',
   gray400: 'hsl(0, 0%, 55%)',
   gray200: 'hsl(0, 0%, 75%)',
+  test: '#FFF',
 };
