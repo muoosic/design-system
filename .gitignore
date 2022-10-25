@@ -5,3 +5,4 @@ node_modules/
 .next/
 dist/
 .env
+packages/docs/storybook-static

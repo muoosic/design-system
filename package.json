@@ -7,12 +7,11 @@
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish",
+    "release": "turbo run build --filter=packages/docs && changeset publish",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,ts,tsx,md,mdx}\""
   },
   "workspaces": [
-    "docs",
     "packages/*"
   ],
   "devDependencies": {
