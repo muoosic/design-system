@@ -7,6 +7,6 @@
       "@styles/*": ["./styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["dist", ".next", "node_modules"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

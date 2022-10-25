@@ -1,16 +1,26 @@
 module.exports = {
   stories: [
     '../src/pages/**/*.stories.mdx',
-    '../src/stories/**/*.stories.tsx',
+    '../src/stories/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
+  ],
+  framework: '@storybook/react',
   core: {
-    builder: 'webpack5',
+    builder: '@storybook/builder-vite',
   },
-  previewHead: (head) => `
-    ${head}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  `,
+  features: {
+    storyStoreV7: true,
+  },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/muoosic-design-system/';
+    }
+
+    return config;
+  },
 };

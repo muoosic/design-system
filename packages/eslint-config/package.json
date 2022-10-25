@@ -2,10 +2,7 @@
   "name": "@muoosic/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "AGPL-3.0 License",
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "dependencies": {
     "@hitechline/eslint-config": "^2.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.7",

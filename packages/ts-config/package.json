@@ -1,8 +1,5 @@
 {
   "name": "@muoosic/ts-config",
   "version": "1.0.0",
-  "license": "AGPL-3.0 License",
-  "publishConfig": {
-    "access": "public"
-  }
+  "private": true
 }

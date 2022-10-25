@@ -1,21 +1,14 @@
-import { themes } from '@storybook/theming';
+import { themes } from '@storybook/theming'
 
 export const parameters = {
-  actions: { argTypesRegex: '^on.*' },
-  backgrounds: {
-    default: 'dark',
-    values: [
-      {
-        name: 'dark',
-        value: '#121214',
-      },
-      {
-        name: 'light',
-        value: '#ffffff',
-      },
-    ],
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
   },
   docs: {
-    theme: themes.dark,
-  },
-};
+    theme: themes.dark
+  }
+}

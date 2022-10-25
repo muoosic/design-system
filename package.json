@@ -1,18 +1,15 @@
 {
   "name": "muoosic",
-  "repository": "git@github.com:muoosic/desing-system.git",
   "author": "Muoosic Team <jobs@muoosic.com>",
-  "license": "AGPL-3.0 License",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev --no-cache --parallel --continue",
-    "lint": "turbo run lint",
-    "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "release": "turbo run build --filter=docs^... && changeset publish",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md,mdx}\""
   },
   "workspaces": [
     "docs",
