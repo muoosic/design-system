@@ -1,6 +1,7 @@
 {
   "name": "muoosic",
   "author": "Muoosic Team <jobs@muoosic.com>",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "turbo run dev --no-cache --parallel --continue",

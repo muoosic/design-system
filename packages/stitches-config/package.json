@@ -1,6 +1,7 @@
 {
   "name": "@muoosic/stitches-config",
   "version": "0.0.1",
+  "license": "UNLICENSED",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

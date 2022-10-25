@@ -1,6 +1,7 @@
 {
   "name": "@muoosic/eslint-config",
   "version": "0.0.1",
+  "license": "UNLICENSED",
   "main": "index.js",
   "dependencies": {
     "@hitechline/eslint-config": "^2.0.3",
